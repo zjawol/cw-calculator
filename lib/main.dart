@@ -10,6 +10,9 @@ class Calculator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    /*
+    Widget create calculator button. Input is the colour, title, and width size
+     */
     Widget calculatorBtn(buttonColor, title, [int widthSize = 25]) {
       return Expanded(
         flex: widthSize,
@@ -33,6 +36,9 @@ class Calculator extends StatelessWidget {
       );
     };
 
+    /*
+    Widget calculator display create calculator display.
+     */
     Widget calculatorDisplay() {
       return Expanded(
         flex: 2,
@@ -63,12 +69,12 @@ class Calculator extends StatelessWidget {
             calculatorDisplay(),
             Expanded(
               flex: 1,
-                child: Row(
-                  children: [
-                    calculatorBtn(Colors.grey, 'C', 75),
-                    calculatorBtn(Colors.blueGrey, '<-', 25),
-                  ],
-                )
+              child: Row(
+                children: [
+                  calculatorBtn(Colors.grey, 'C', 75),
+                  calculatorBtn(Colors.blueGrey, '<-', 25),
+                ],
+              )
             ),
             Expanded(
               flex: 1,
@@ -83,36 +89,36 @@ class Calculator extends StatelessWidget {
             ),
             Expanded(
               flex: 1,
-                child: Row(
-                  children: [
-                    calculatorBtn(Colors.black, '4'),
-                    calculatorBtn(Colors.black, '5'),
-                    calculatorBtn(Colors.black, '6'),
-                    calculatorBtn(Colors.blue, 'x'),
-                  ],
-                )
+              child: Row(
+                children: [
+                  calculatorBtn(Colors.black, '4'),
+                  calculatorBtn(Colors.black, '5'),
+                  calculatorBtn(Colors.black, '6'),
+                  calculatorBtn(Colors.blue, 'x'),
+                ],
+              )
             ),
             Expanded(
               flex: 1,
-                child: Row(
-                  children: [
-                    calculatorBtn(Colors.black, '1'),
-                    calculatorBtn(Colors.black, '2'),
-                    calculatorBtn(Colors.black, '3'),
-                    calculatorBtn(Colors.blue, '-'),
-                  ],
-                )
+              child: Row(
+                children: [
+                  calculatorBtn(Colors.black, '1'),
+                  calculatorBtn(Colors.black, '2'),
+                  calculatorBtn(Colors.black, '3'),
+                  calculatorBtn(Colors.blue, '-'),
+                ],
+              )
             ),
             Expanded(
               flex: 1,
-                child: Row(
-                  children: [
-                    calculatorBtn(Colors.black, '0'),
-                    calculatorBtn(Colors.black, '.'),
-                    calculatorBtn(Colors.blue, '='),
-                    calculatorBtn(Colors.blue, '+'),
-                  ],
-                )
+              child: Row(
+                children: [
+                  calculatorBtn(Colors.black, '0'),
+                  calculatorBtn(Colors.black, '.'),
+                  calculatorBtn(Colors.blue, '='),
+                  calculatorBtn(Colors.blue, '+'),
+                ],
+              )
             ),
           ],
         ),
